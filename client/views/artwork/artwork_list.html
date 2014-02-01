@@ -1,0 +1,24 @@
+<template name="artWorkList">
+	<table class="table table-striped">
+		<tr>
+			<th>Image</th>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Art Movement</th>
+			<th>Element</th>
+			<th>Action</th>
+		</tr>
+		{{#each artworks}}
+			<tr>{{> artWorkItem}}</tr>
+		{{/each}}
+	</table>
+</template>
+
+<template name="searchArtWork">
+	<div class="right-inner-addon">
+		<form>
+			<i class="glyphicon glyphicon-search"></i>
+			<input type="text" class="form-control" placeholder="Search" size="40"/>
+		</form>
+	</div>
+</template>

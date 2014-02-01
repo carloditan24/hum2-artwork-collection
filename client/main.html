@@ -1,0 +1,32 @@
+<head>
+	<title>HUM 2</title>
+	<link rel="stylesheet" type="text/css" href="/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/dist/css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					{{> navbar}}
+				</nav>
+			</div>
+		</div>
+		<div class="row" style="margin-top:70px">
+			<div class="col-md-4 offset-3">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 sidebar-outer">
+				<div class="affix">
+					{{> artWorkForm}}
+				</div>
+			</div>
+			<div class="col-md-8">
+				{{> searchArtWork}}
+				{{> artWorkList}}
+			</div>
+		</div>
+	</div>
+</body>

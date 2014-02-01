@@ -1,0 +1,38 @@
+<template name="artWorkItem">
+	<td>
+		<img src='/hum2/{{image}}' height='150' width='200'/>
+	</td>
+	<td>
+		<h3>
+			{{title}}	
+		</h3>
+	</td>
+	<td>
+		<span>{{author}}</span>
+	</td>
+	<td>
+		<span>{{movement}}</span>
+	</td>
+	<td>
+		<span>{{element}}</span>
+	</td>
+	<td>
+		{{> editArtWork}}
+		{{> deleteArtWork}}
+	</td>
+</template>
+
+<template name="editArtWork">
+	<input type='hidden' id='artwork_id' value='{{_id}}'>
+	<a href="{{artWorkPagePath this}}">
+		<button name='edit_artwork' class='btn btn-primary'>
+			<span class='glyphicon glyphicon-pencil'></span>
+		</button>
+	</a>
+</template>
+<template name="deleteArtWork">
+	<input type='hidden' id='artwork_id' name='{{title}}' value='{{_id}}'/>
+	<button name='delete_artwork' class='btn btn-danger'>
+		<span class='glyphicon glyphicon-remove'></span>
+	</button>
+</template>

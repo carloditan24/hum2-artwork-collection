@@ -1,0 +1,34 @@
+<template name="artWorkPage">
+	<table>
+		<tr>
+			<td>
+				<img src='/hum2/{{image}}' height='200' width='300'/>
+			<td>
+				{{#with currentArtWork}}
+					{{> artWorkDescription}}
+				{{/with}}
+			</td>
+		</tr>
+	</table>
+</template>
+
+<template name="artWorkDescription">
+	<table>
+		<tr>
+			<td>Title</td>
+			<td><h3>{{title}}</h3></td>
+		</tr>
+		<tr>
+			<td>Author</td>
+			<td><b>{{author}}</b></td>
+		</tr>
+		<tr>
+			<td>Art Movement</td>
+			<td>{{movement}}</td>
+		</tr>
+		<tr>
+			<td>Element</td>
+			<td>{{element}}</td>
+		</tr>
+	</table>
+</template>
